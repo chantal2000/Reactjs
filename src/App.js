@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
+ import All from './Component/All'
+import React  from 'react'
+import About from './Component/About';
+import Contact from './Component/Contact';
+import Home from './Component/Home';
+import Sell from './Component/Sell';
+import {Link,Route, BrowserRouter as Router} from 'react-router-dom'
+import { Footer } from './Component/Footer';
+function App(){
+  
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+           <Router>
+      <nav>
+            <span ><Link to="/Home"className="white">Home</Link> </span>
+            <span><Link to="/about"className="white">About</Link></span>     
+            <span><Link to="/contact"className="white">Contact us</Link></span>
+       <span><Link to="/All"className="white">Buy Products</Link></span>
+        <span><Link to="/Sell"className="white">Sell Products</Link></span>
+      </nav>
 
+      <Route path="/Home" exact component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/All"component={All}/>
+      <Route path="/Sell"component={Sell}/>
+</Router>
+       </div> 
+  
+  )
+
+}
 export default App;
+
