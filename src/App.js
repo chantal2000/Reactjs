@@ -6,6 +6,7 @@ import Contact from './Component/Contact';
 import Home from './Component/Home';
 import Sell from './Component/Sell';
 import {Link,Route, BrowserRouter as Router} from 'react-router-dom'
+// import { Footer } from './Component/Footer';
 function App(){
   
   return(
