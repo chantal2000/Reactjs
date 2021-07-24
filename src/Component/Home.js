@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import prod from '../Video/Ag3.mp4'
 import Footer from './Footer'
 export class Home extends Component {
     render() {
