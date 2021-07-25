@@ -1,5 +1,5 @@
 import './App.css';
- import All from './Component/All'
+import All from './Component/All'
 import React  from 'react'
 import About from './Component/About';
 import Contact from './Component/Contact';
