@@ -15,7 +15,7 @@ objectFit:"cover",
  }
  }>
       <source src={prod}></source>
-      </video> */}g
+      </video> */}
       <Footer/>
             </div>
             
